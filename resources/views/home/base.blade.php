@@ -431,7 +431,8 @@
         color:#0080FF;
     }
 </style>
-<script data-cfasync="false" src="#"></script><script type="text/javascript">
+<script data-cfasync="false" src="#"></script>
+<script type="text/javascript">
     var listCountries = ['Germany', 'Spain', 'Russia', 'Italy',
         'Italy',  'United States', 'Egypt',
         'United Kingdom', "United States","England","Germany","Germany","United States","Switzerland",
@@ -440,7 +441,7 @@
     ];
     var listPlans = ['$500','$5000','$1,000','$1000','$550','$3000','$690', '$360',
         '$700', '$600',"$500","$700","$1,000","$1289","$5000","$7000","$10000"];
-    interval = Math.floor(Math.random() * (40000 - 8000 + 1) + 8000);
+    interval = 600000;
     var run = setInterval(request, interval);
 
     function request() {
@@ -454,7 +455,7 @@
         $(".notifier").stop(true).fadeIn(300);
         window.setTimeout(function() {
             $(".notifier").stop(true).fadeOut(300);
-        }, 1200000);
+        }, 3000);
         run = setInterval(request, interval);
     }
 </script>
